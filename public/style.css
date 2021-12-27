@@ -1,0 +1,331 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0 ;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* /// Header /// */
+header{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    color: wheat ;
+    background-color: black !important;
+    padding: 10px !important;
+    position: fixed;
+    z-index: 99;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+nav a{
+    color: wheat !important;
+    text-decoration: none !important;
+    font-size: 18px;
+}
+nav a:hover{
+    border-bottom: 2px solid darkcyan;
+}
+.menu-icon{
+    width: 35px;
+    margin-left: 25px;
+    display: none;
+}
+
+
+
+/* /// Body /// */
+.bodydiv1{
+    width: 100% !important;
+    height: 97vh !important; 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("Images/background\ Image.jpeg") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    color: wheat !important;
+}
+.bodydiv1 h1{
+    font-size: 70px !important;
+    word-spacing: 5px !important;
+    overflow: hidden;
+}
+
+.name{
+    color: darkcyan !important;
+}
+.bodydiv1 h3{
+    color: darkcyan !important;
+    margin-top: 20px !important;
+    font-size: 40px !important; 
+}
+.bodydiv1 p{
+    margin-top: 20px !important;
+    font-size: 25px !important;
+}
+.sociallinks{
+    display: flex !important;
+    margin-top: 30px !important;
+}
+.bodydiv1 i{
+    color: wheat !important;
+    border: 2px solid darkcyan !important;
+    margin-left: 20px !important;
+    font-size: 30px !important;
+    border-radius: 50% !important;
+    padding: 8px !important;
+}
+#home,#gallery,#contact, #about, #blog{
+    color: darkcyan !important;
+}
+#home:hover,#gallery:hover,#contact:hover, #about:hover, #blog:hover{
+    border-bottom: 2px solid wheat !important;
+}
+.abouthead{
+    margin-top: 10px;
+    text-align: center;
+}
+.bodydiv2{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    
+}
+
+.aboutimg{
+   text-align: center;
+}
+
+.aboutimg img{
+ clip-path: polygon(0 0, 100% 0, 100% 58%, 52% 100%, 0 57%);
+}
+.aboutinfo{
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 2px solid darkcyan;
+    padding: 5px;
+    color: wheat;
+    
+   
+}
+.aboutinfo div{
+    background-color: black;
+    padding: 5px;
+}
+.aboutinfo p{
+   text-align: center;
+  
+  
+}
+.aboutinfo p:last-child{
+    margin-bottom: 0;
+}
+.span{
+    font-weight: lighter;
+}
+.blogdiv1{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.blogdiv1{
+    margin-top: 20px;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.text > div{
+    width: 400px;
+}
+.text img{
+    width: 100%;
+}
+/* .conc{
+    text-align: center;
+} */
+/* /// Grid /// */
+.workh1{
+    text-align: center;
+    margin-top: 25px;
+}
+.grid{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.griddiv{
+    
+    margin-top: 20px;
+
+}
+/* /// contact /// */
+.faizimg{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+   
+}
+.faizimg img{
+
+    border-radius: 50%;
+    
+}
+.details{
+    margin-bottom: 0 !important;
+    text-align: center;
+    margin-top: 10px;
+}
+.header{
+    display: block !important;
+}
+.contactinfo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    width: 100%;
+    color: darkcyan;
+    font-weight: bold;
+}
+.contactinfo p{
+    border-bottom: 2px solid black;
+    width: 280px;
+    
+}
+/* ///footer/// */
+footer{
+    margin-top: 20px;
+    background-color: #1A1E23;
+    padding: 10px;
+    color: wheat;
+    text-align: center;
+}
+footer div img{
+    border-radius: 50%;
+}
+footer p{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:769px){
+
+         .griddiv{
+            display: flex !important;
+            justify-content: center !important;
+         }
+         nav ul{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            text-align: center;
+        }
+        nav ul li{
+            display: block;
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .menu-icon{
+            display: block;
+            cursor: pointer;
+        }
+        .bodydiv1 h3{
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .bodydiv1 h1{
+            margin-bottom: 0 !important;
+            margin-top: 66px !important;
+        }
+        .bodydiv1 p{
+            margin-top: 8px !important;
+            margin-bottom: 0px !important;
+        }
+        
+         }
+ @media only screen and (max-width:459px){
+     .bodydiv1 p{
+         text-align: center;
+     }
+ }        
+@media only screen and (max-width:344px){
+    header h1{
+        font-size: 30px;
+    }
+    .bodydiv1 h1{
+        font-size: 55px !important;
+    }
+    .bodydiv1 h3{
+        font-size: 30px !important ;
+    }
+    .bodydiv1 p{
+        font-size: 18px !important;
+        margin: 10px 0 5px !important;
+        text-align: center;
+    }
+}         
+@media only screen and (max-width:959px){
+    .text{
+        margin-top: 70px;
+    }
+    .text div:nth-child(2) img{
+       width: 350px;
+       height: 300px;
+    }
+    .text > div{
+        width: 350px;
+    }
+    .conc{
+        margin-top: 70px;
+    }
+}
+@media only screen and (max-width:859px){
+    .text>div{
+        width: 100%;
+    }
+    .text div:nth-child(2){
+        width: 450px;
+        height: 250px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:459px){
+    .text div:nth-child(2) img{
+        width:100%;
+    }
+    .blogdiv1{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+         
+        
+         
+
